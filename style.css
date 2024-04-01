@@ -1,0 +1,389 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+
+  .icon img{
+    width: 22%;
+  }
+  html{
+    /* height: 1000vh; */
+    scroll-behavior: smooth;
+    font-family:'Courier New', Courier, monospace;
+    background: whitesmoke;
+  }
+.navbar-extra a{
+    color: black;
+}
+.navbar-extra{
+  display: flex;
+  align-items: center;
+}
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 1.4rem 7%;
+    border-bottom: 1px solid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  }
+  .navbar .navbar-nav a {
+    color: black;
+    padding: 0.5rem;
+  }
+  .navbar a{
+    color: black;
+  }
+
+  .bg img {
+    width: 100%;
+    padding-top:4.6rem;
+    /* position: relative; */
+    
+    
+
+  }
+  .home {
+    min-height: 170vh;
+     display: flex;
+    align-items: center;
+    background-image: url('bijikopi.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  
+  }
+  .about{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4.8rem;
+    margin: 2rem;
+    font-size: 1.2rem;
+    
+  }
+  .about h2{
+    padding: 1rem;
+
+  }
+  .icon {
+    margin-top: 300px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    right: 0;
+  }
+  .icon {
+    font-size: 0.65rem;
+  }
+  .menu{
+    padding: 5rem;
+  }
+
+  .menu h1, .menu h2{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+  }
+  .produk img{
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    display: block;
+    margin: auto;
+    /* margin: auto; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    
+}
+.menu .produk {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.menu .row .produk{
+    justify-content  : center;
+    padding: 1rem;
+    padding-top: 2rem;
+    gap: 2rem;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.produk-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Mengatur agar produk ditengah */
+    
+}
+.produk{
+    
+    width: 25%; /*Atur lebar setiap produk agar 25% dari lebar container*/
+    padding: 10px; /* Atur jarak antara setiap produk */
+    box-sizing: border-box; /* Hindari penambahan padding ke lebar produk */
+    text-align: center; /* Atur agar konten di tengah */
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contact{
+  padding: 5rem;
+}
+
+.contact .maps{
+    width: 250%;
+    height: 300px;
+    /* position: relative; */
+}
+
+
+.contact .maps {
+    flex: 1 1 50%; /* Mengatur agar peta memanfaatkan setengah dari lebar layar */
+    max-width:50%; /* Membatasi peta agar tidak melebihi setengah dari lebar layar */
+    
+    padding-left: 1rem;
+    /* padding-right: 11rem; */
+}
+
+.contact .alamat,
+.contact .icon1,
+.contact .jam,
+.contact .whatsapp {
+    flex: 1 1 50%; /* Mengatur agar bagian informasi lainnya memanfaatkan setengah dari lebar layar */
+    max-width: 50%; /* Membatasi bagian informasi lainnya agar tidak melebihi setengah dari lebar layar */
+}
+
+.map {
+    width: 100%; /* Mengatur agar peta memiliki lebar maksimum */
+    height: 110%; /* Mengisi tinggi penuh dari container */
+    min-height: 300px;
+}
+
+.container {
+    display: flex;
+}
+
+.maps {
+    width: 50%;
+    /* tambahkan properti lain sesuai kebutuhan */
+}
+
+.contact-details {
+    width: 40%;
+    padding-left: 1rem;
+    /* tambahkan properti lain sesuai kebutuhan */
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+#hamburger-menu {
+  display: none;
+}
+
+@media (max-width: 580px) {
+  .contact .map{
+    width: 250%;
+    height: 500px;
+    padding-right: 2rem;
+    align-items: center;
+    /* position: relative; */
+}
+  .contact .map{
+    /* width: 20rem; */
+    height: 280px;
+    position: relative;
+  }
+  .produk  {
+    height: auto; /* Mengatur tinggi gambar agar proporsi aspeknya tetap terjaga */
+    width: auto; /* Mengatur lebar gambar agar sesuai dengan lebar container */
+    
+}
+
+  .home {
+    min-height: 100vh;
+     display: flex;
+    align-items: center;
+    background-image: url('bijikopi.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  
+  }
+  .navbar {
+      padding: 1rem;
+  }
+  #hamburger-menu{
+    display: block;
+    
+}
+
+  .navbar .navbar--logo {
+      font-size: 1rem;
+  }
+  .icon{
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+  }
+
+
+  .navbar-nav a {
+      padding: 1rem 0;
+  }
+
+
+  .icon {
+      margin-top: 2rem; /* Mengurangi margin atas pada layar seluler */
+  }
+
+  .menu {
+      padding: 2rem 1rem; /* Mengurangi padding pada bagian 'Menu' */
+  }
+  .container {
+    flex-direction: column; /* Mengubah orientasi container menjadi kolom pada layar seluler */
+}
+
+.map {
+    order: 2; /* Menempatkan peta di bawah form kontak */
+    width: 250px;
+    align-items: center;
+    height: 450px;
+
+}
+
+.contact-details {
+    width: 100%; /* Mengatur lebar form kontak agar memenuhi lebar layar */
+    padding-left: 0; /* Menghapus padding kiri pada form kontak */
+    padding-right: 0; /* Menghapus padding kanan pada form kontak */
+}
+
+.navbar .navbar-nav{
+  position: absolute;
+  top: 100%;
+  right: -130%;
+  background-color: #fff;
+  width: 15rem;
+  height: 50vh;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.navbar .navbar-nav.active{
+  right: 0;
+}
+.navbar .navbar-nav a{
+  color: var(--bg);
+  display: block;
+  margin: 1.5rem;
+  padding: 0.5rem;
+  font-size: 2rem;
+
+}
+
+.produk-container .row img{
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product-review {
+  max-width: 90%; /* Sesuaikan lebar maksimal sesuai kebutuhan */
+  width: auto;
+  height: auto;
+}
+}
+
+
+.product-review {
+  margin: 20px auto;
+  padding: 20px;
+  /* border: 1px solid #ddd; */
+  border-radius: 5px;
+  max-width: 500px; /* Sesuaikan lebar sesuai kebutuhan */
+  text-align: center;
+}
+
+.product-review h3 {
+  margin-bottom: 15px;
+}
+
+.product-review form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-review form label {
+  margin-bottom: 10px;
+}
+
+.product-review form textarea,
+.product-review form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.product-review form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

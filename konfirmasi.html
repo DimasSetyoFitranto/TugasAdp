@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konfirmasi Pesanan</title>
+</head>
+<body>
+    <form action="submit_contact.php">
+    <h1>Konfirmasi Pesanan Anda</h1>
+    
+    <h2>Detail Pesanan:</h2>
+    <ul>
+        <li><strong >Nama:</strong> <?php echo $_POST['nama']; ?></li>
+        <li><strong>Pesanan:</strong> <?php echo $_POST['email']; ?></li>
+        <li><strong>Jumlah Pesanan:</strong> <?php echo $_POST['jumlah_pesenan']; ?></li>
+        <li><strong>Nomor HP:</strong> <?php echo $_POST['no_hp']; ?></li>
+    </ul>
+    
+    <p>Terima kasih telah melakukan pemesanan. Kami akan segera memproses pesanan Anda.</p>
+    <a href="index.html">Kembali ke beranda</a>
+</form>
+</body>
+</html>
