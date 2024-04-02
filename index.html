@@ -282,6 +282,33 @@
     <script>
         feather.replace();
     </script>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+    const pesanan = document.getElementById("pesanan");
+    const jumlahPesanan = document.getElementById("jumlah_pesenan");
+    const totalHarga = document.getElementById("total_harga");
+
+    // Daftar harga untuk setiap produk
+    const hargaProduk = {
+        "Americano": 11000,
+        "Cappucino": 13000,
+        // Tambahkan harga produk lainnya di sini
+    };
+
+    // Event listener untuk memperbarui total harga
+    pesanan.addEventListener("change", updateTotal);
+    jumlahPesanan.addEventListener("change", updateTotal);
+
+    function updateTotal() {
+        const selectedProduct = pesanan.value;
+        const quantity = jumlahPesanan.value;
+        const pricePerItem = hargaProduk[selectedProduct];
+        const totalPrice = pricePerItem * quantity;
+        totalHarga.value = totalPrice;
+    }
+});
+
+                </script>
     <script src="script.js"></script>
 </body>
 </html>
