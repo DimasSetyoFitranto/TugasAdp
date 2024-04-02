@@ -12,56 +12,6 @@ document.addEventListener('click', function(e){
     }
 });
 
-// JavaScript code for handling review submission and displaying reviews
-// Sample JavaScript code to handle form submission and display reviews
-
-// Function to handle form submission
-function submitReview(event) {
-    event.preventDefault(); // Prevent form from submitting
-    const name = document.getElementById('nama').value;
-    const review = document.getElementById('ulasan').value;
-    const rating = document.getElementById('penilaian').value;
-
-    // Clear form fields
-    document.getElementById('nama').value = '';
-    document.getElementById('ulasan').value = '';
-    document.getElementById('penilaian').value = '5';
-
-    // Display the submitted review
-    displayReview(name, review, rating);
-}
-
-// Function to display a review
-function displayReview(name, review, rating) {
-    const reviewsList = document.querySelector('.reviews-list');
-
-    // Create review element
-    const reviewElement = document.createElement('div');
-    reviewElement.classList.add('review');
-
-    // Create elements for name, review, and rating
-    const nameElement = document.createElement('h3');
-    nameElement.textContent = name;
-
-    const reviewContent = document.createElement('p');
-    reviewContent.textContent = review;
-
-    const ratingElement = document.createElement('div');
-    ratingElement.classList.add('rating');
-    ratingElement.textContent = 'Rating: ' + '★'.repeat(rating);
-
-    // Append elements to review element
-    reviewElement.appendChild(nameElement);
-    reviewElement.appendChild(reviewContent);
-    reviewElement.appendChild(ratingElement);
-
-    // Append review element to reviews list
-    reviewsList.appendChild(reviewElement);
-}
-
-// Add event listener to form submission
-const reviewForm = document.querySelector('.review-form');
-reviewForm.addEventListener('submit', submitReview);
 document.addEventListener("DOMContentLoaded", function() {
     const pesanan = document.getElementById("pesanan");
     const jumlahPesanan = document.getElementById("jumlah_pesenan");
@@ -71,6 +21,26 @@ document.addEventListener("DOMContentLoaded", function() {
     const hargaProduk = {
         "Americano": 11000,
         "Cappucino": 13000,
+        "Espresso": 8000,
+        "Latte": 12000,
+        "Caramel Macchiato": 13000,
+        "Mocca Coffe": 13000,
+        "Coffe Tarik": 14000,
+        "Coffe Aren": 14000,
+        "Red Velvet": 16000,
+        "Matcha Green Caramel": 18000,
+        "Hazelnut": 17000,
+        "Chocolate Caramel": 17000,
+        "Pandan Ice Caramel": 20000,
+        "Chocolate Milk": 22000,
+        "Chocolate Cheese": 23000,
+        "Vanilla Latte Caramel": 24000,
+        "Nasi Goreng": 20000,
+        "Mie Goreng": 22000,
+        "Sate Ayam": 30000,
+        "Gado-Gado": 20000,
+        "Bakso": 15000,
+        "Soto Ayam": 15000
         // Tambahkan harga produk lainnya di sini
     };
 
@@ -86,5 +56,4 @@ document.addEventListener("DOMContentLoaded", function() {
         totalHarga.value = totalPrice;
     }
 });
-
 
