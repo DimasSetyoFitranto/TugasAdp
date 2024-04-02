@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
         "Sate Ayam": 30000,
         "Gado-Gado": 20000,
         "Bakso": 15000,
-        "Soto Ayam": 15000
+        "Soto Ayam": 15000,
         // Tambahkan harga produk lainnya di sini
     };
 
