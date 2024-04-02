@@ -12,16 +12,18 @@
         <h2>Detail Pesanan:</h2>
         <ul>
             <li><strong>Nama:</strong> <?php echo $_POST['nama']; ?></li>
-            <li><strong>Pesanan:</strong> <?php echo $_POST['email'] ; ?></li>
+            <li><strong>Pesanan:</strong> <?php echo $_POST['pesanan'] ; ?></li>
             <li><strong>Jumlah Pesanan:</strong> <?php echo $_POST['jumlah_pesenan']; ?></li>
             <li><strong>Nomor HP:</strong> <?php echo $_POST['no_hp']; ?></li>
-            <li><strong>Total Harga:</strong> <?php echo calculateTotalPrice($_POST['email'], $_POST['jumlah_pesenan']); ?></li>
+            <li><strong>Total Harga:</strong> <?php echo calculateTotalPrice($_POST['pesanan'], $_POST['jumlah_pesenan']); ?></li>
         </ul>
+        
         
         <p>Terima kasih telah melakukan pemesanan. Kami akan segera memproses pesanan Anda.</p>
         <a href="index.html">Kembali ke beranda</a>
         
     </form>
+    
     
     
     <?php
@@ -43,7 +45,7 @@
                 $harga = 12000;
                 break;
             case "Caramel Macchiato":
-                $harga = 12000;
+                $harga = 13000;
                 break;
             
             case "Mocca Coffe":
@@ -78,6 +80,12 @@
                 break;
             case "Vanilla Latte Caramel":
                 $harga = 24000;
+                break;
+            case "Soto Ayam":
+                $harga = 15000;
+                break;
+            case "Nasi Goreng":
+                $harga = 20000;
                 break;
     
             // Tambahkan lebih banyak kasus untuk item lain jika diperlukan
