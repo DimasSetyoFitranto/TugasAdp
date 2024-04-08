@@ -28,6 +28,7 @@
     justify-content: space-between;
     background-color: #fff;
     padding: 1.4rem 7%;
+    padding: 10px 20px;
     border-bottom: 1px solid;
     position: fixed;
     top: 0;
@@ -43,15 +44,9 @@
     color: black;
   }
 
-  .bg img {
-    width: 100%;
-    padding-top:4.6rem;
-    /* position: relative; */
-    
-    
 
-  }
   .home {
+    color: white;
     min-height: 170vh;
      display: flex;
     align-items: center;
@@ -316,7 +311,7 @@ button:hover {
   right: -130%;
   background-color: #fff;
   width: 15rem;
-  height: 50vh;
+  height: 55vh;
   transition: 0.3s;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
@@ -325,6 +320,7 @@ button:hover {
 }
 .navbar .navbar-nav.active{
   right: 0;
+  display: block;
 }
 .navbar .navbar-nav a{
   color: var(--bg);
@@ -346,6 +342,8 @@ button:hover {
   width: auto;
   height: auto;
 }
+
+
 }
 
 
@@ -387,3 +385,42 @@ button:hover {
   border-radius: 5px;
   cursor: pointer;
 }
+
+
+
+/*  */
+
+.navbar--logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333333; /* Warna teks logo */
+}
+.navbar--logo img {
+  width: 40px; /* Lebar logo */
+  height: auto; /* Tinggi logo disesuaikan otomatis */
+  margin-right: 10px; /* Jarak antara logo dan teks */
+}
+.navbar-nav {
+  display: flex;
+
+}
+.navbar-nav a {
+  margin-right: 20px; /* Jarak antara setiap item navigasi */
+  text-decoration: none;
+  color: #333333; /* Warna teks navigasi */
+}
+.navbar-nav a:hover {
+  color: #ff7f00; /* Warna teks navigasi saat digulirkan */
+}
+.navbar-extra a {
+    margin-right: 15px; /* Jarak antara setiap ikon */
+    color: #333333; /* Warna ikon */
+    text-decoration: none;
+}
+
+
+
+
+
+
